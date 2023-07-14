@@ -29,10 +29,8 @@ class CRUDTestCase(unittest.TestCase):
         resource_data = response.json()
 
         if response.status_code == 200:
-        # Successful request
             print("Object created successfully.")
         else:
-        # Request failed
             print(f"Request FAILED with status code: {response.status_code}")
 
         created_resource_id = response.json().get('id')
@@ -61,10 +59,8 @@ class CRUDTestCase(unittest.TestCase):
         response = requests.get(f'{url}{end_point}/findByStatus?status={status}')
 
         if response.status_code == 200:
-        # Successful request
             print("Object READ by STATUS successfully.")
         else:
-        # Request failed
             print(f"Request FAILED with status code: {response.status_code}")
 
         resource_data = response.json()
@@ -111,6 +107,3 @@ suite.addTest(CRUDTestCase('test_delete'))
 
 runner = unittest.TextTestRunner()
 runner.run(suite)
-
-# if __name__ == '__main__':
-#     unittest.main()
