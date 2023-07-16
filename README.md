@@ -20,7 +20,7 @@ It also contains a file for API testing the petsStore api using Python, requests
 - `URL`: The URL of the Google website. (e.g., `https://www.google.com/`)
 - `SEARCH_TERM`: The term to search on Google.
 - `URL_API`= `https://petstore3.swagger.io/api/v3`
-- `API_KEY`= You will need to authorize an API Key to use it and put it here.
+- `API_KEY`= You will need to authorize an API Key to access the API and complete the tests.
 - `ENDPOINT`= `/pet`
 
 ## Usage
